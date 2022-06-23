@@ -58,7 +58,7 @@ export default function Weatherforcast() {
         </div>
         <div class="forecast">
           <WeeklyForecast weatherData={weatherData} />
-          <TommoRain weatherData={weatherData} inputValue={inputValue} />
+          <TommoRain weatherData={weatherData} />
         </div>
       </div>
       <div class="container2">

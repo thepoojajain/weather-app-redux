@@ -2,14 +2,14 @@ import React from 'react';
 import './TommoRain.css';
 import '../Common/Common.css';
 
-export default function TommoRain({ weatherData, inputValue }) {
+export default function TommoRain({ weatherData }) {
   return (
     <div class="tomo-forecast">
       {weatherData ? (
         <div class="rain-forecast">
           <div>
             <h4>tomorrow</h4>
-            <h1>{inputValue}</h1>
+            <h1>{weatherData.timezone.split('/')[1]}</h1>
           </div>
           <div>
             <h1>
