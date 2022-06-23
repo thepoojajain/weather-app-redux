@@ -1,0 +1,40 @@
+.daily-forecast-header {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+}
+
+.daily-forecast-icon {
+  display: flex;
+  height: 20px;
+  width: 20px;
+  justify-content: space-evenly;
+}
+
+.daily-forecast-icon > a {
+  margin-left: 1rem;
+}
+
+.grid-2x4 {
+  display: grid;
+  grid-template-rows: repeat(2, 60px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+}
+
+.rectangle {
+  border-radius: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.rectangle-size {
+  height: 15px;
+  width: 20px;
+}
+.rectangle-color {
+  background-color: white;
+}
