@@ -1,6 +1,6 @@
 import React from 'react';
 import './WeatherPrediction.css';
-import '../WeatherPredictionCard/WeatherPredictionCard';
+import WeatherPredictionCard from '../WeatherPredictionCard/WeatherPredictionCard';
 
 export default function WeatherPrediction({ weatherData }) {
   return (

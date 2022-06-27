@@ -21,9 +21,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
 }
 
 .minMaxTemp {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   color: orange;
 }
