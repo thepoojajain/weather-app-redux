@@ -38,3 +38,11 @@
 .rectangle-color {
   background-color: white;
 }
+
+.forecast--icon {
+  padding: 0.4rem;
+  fill: white;
+  height: 15px;
+  width: 15px;
+  border-radius: 0.8rem;
+}

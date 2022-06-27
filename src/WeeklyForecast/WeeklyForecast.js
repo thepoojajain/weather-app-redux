@@ -14,8 +14,9 @@ export default function WeeklyForecast({ weatherData }) {
         </div>
         <div className="daily-forecast-icon">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/1229/1229492.png"
+            src="https://cdn-icons-png.flaticon.com/512/1113/1113853.png"
             alt="umbrella icon"
+            className="forecast--icon"
             style={{
               'background-color': currentTab === 'temperature' ? 'orange' : '',
             }}
@@ -25,14 +26,16 @@ export default function WeeklyForecast({ weatherData }) {
           <img
             src="https://cdn-icons-png.flaticon.com/512/1229/1229492.png"
             alt="umbrella icon"
+            className="forecast--icon"
             style={{
               'background-color': currentTab === 'rainfall' ? 'orange' : '',
             }}
             onClick={() => setCurrentTab('rainfall')}
           />
           <img
-            src="https://cdn-icons-png.flaticon.com/512/1229/1229492.png"
+            src="https://cdn-icons-png.flaticon.com/512/1247/1247109.png"
             alt="umbrella icon"
+            className="forecast--icon"
             style={{
               'background-color': currentTab === 'wind' ? 'orange' : '',
             }}
