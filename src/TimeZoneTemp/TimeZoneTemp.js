@@ -12,7 +12,7 @@ export default function TimeZoneTemp({ weatherData }) {
           {weatherData.timezone.split('/')[0]}
         </p>
       </div>
-      <h1>
+      <h1 className="tempOrange">
         {weatherData.current.temp.toFixed()}
         <span>&#8451;</span>
       </h1>
