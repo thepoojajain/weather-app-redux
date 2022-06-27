@@ -16,17 +16,26 @@ export default function WeeklyForecast({ weatherData }) {
           <img
             src="https://cdn-icons-png.flaticon.com/512/1229/1229492.png"
             alt="umbrella icon"
+            style={{
+              'background-color': currentTab === 'temperature' ? 'orange' : '',
+            }}
             onClick={() => setCurrentTab('temperature')}
           />
 
           <img
             src="https://cdn-icons-png.flaticon.com/512/1229/1229492.png"
             alt="umbrella icon"
+            style={{
+              'background-color': currentTab === 'temperature' ? 'orange' : '',
+            }}
             onClick={() => setCurrentTab('rainfall')}
           />
           <img
             src="https://cdn-icons-png.flaticon.com/512/1229/1229492.png"
             alt="umbrella icon"
+            style={{
+              'background-color': currentTab === 'temperature' ? 'orange' : '',
+            }}
             onClick={() => setCurrentTab('wind')}
           />
         </div>
