@@ -1,7 +1,7 @@
 import React from 'react';
 import './WeatherPredictionCard.css';
 
-export default function WeatherPredictionCard({ weatherData }) {
+export default function WeatherPredictionCard({ dailyWeatherData }) {
   return (
     <div>
       <div className="WeatherCard">
@@ -13,12 +13,12 @@ export default function WeatherPredictionCard({ weatherData }) {
           />
         </div>
         <div className="cardDate">
-          <p>{weatherData.daily[0].dt}</p>
+          <p>{dailyWeatherData.dt}</p>
           <div className="cardTemp">
-            <h3>{weatherData.daily[0].weather[0].description}</h3>
+            <h3>{dailyWeatherData.weather[0].description}</h3>
             <h3 className="minMaxTemp">
-              {weatherData.daily[0].temp.max.toFixed()}
-              <span>&deg;</span> / {weatherData.daily[0].temp.min.toFixed()}
+              {dailyWeatherData.temp.max.toFixed()}
+              <span>&deg;</span> / {dailyWeatherData.temp.min.toFixed()}
               <span>&deg;</span>
             </h3>
           </div>
