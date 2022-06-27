@@ -3,7 +3,7 @@ import './UVRays.css';
 
 export default function UVRays({ weatherData }) {
   return (
-    <div classNmae="card">
+    <div className="card">
       <div>
         <img
           src="https://img.freepik.com/free-vector/sun-icon-bright-yellow-sol-symbol-with-rays-childish-simple-style_53562-14613.jpg?"
@@ -12,7 +12,7 @@ export default function UVRays({ weatherData }) {
         />
       </div>
       <div>
-        <h1>{weatherData.current.uvi} UVI</h1>
+        <h3>{weatherData.current.uvi} UVI</h3>
       </div>
     </div>
   );
