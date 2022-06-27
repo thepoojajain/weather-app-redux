@@ -1,10 +1,12 @@
 import React from 'react';
+import './TimeZoneTemp.css';
+import '../Common/Common.css';
 
 export default function TimeZoneTemp({ weatherData }) {
   return (
-    <div>
+    <div className="TimeZoneTemp">
       <div>
-        <h1>SUN</h1>
+        <h2>Sun</h2>
         <p>
           {weatherData.timezone.split('/')[1]}{' '}
           {weatherData.timezone.split('/')[0]}
