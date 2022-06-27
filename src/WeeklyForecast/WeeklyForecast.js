@@ -26,7 +26,7 @@ export default function WeeklyForecast({ weatherData }) {
             src="https://cdn-icons-png.flaticon.com/512/1229/1229492.png"
             alt="umbrella icon"
             style={{
-              'background-color': currentTab === 'temperature' ? 'orange' : '',
+              'background-color': currentTab === 'rainfall' ? 'orange' : '',
             }}
             onClick={() => setCurrentTab('rainfall')}
           />
@@ -34,7 +34,7 @@ export default function WeeklyForecast({ weatherData }) {
             src="https://cdn-icons-png.flaticon.com/512/1229/1229492.png"
             alt="umbrella icon"
             style={{
-              'background-color': currentTab === 'temperature' ? 'orange' : '',
+              'background-color': currentTab === 'wind' ? 'orange' : '',
             }}
             onClick={() => setCurrentTab('wind')}
           />
