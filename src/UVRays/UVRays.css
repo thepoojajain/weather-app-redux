@@ -1,0 +1,12 @@
+.card {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sun-icon {
+  height: 40px;
+  width: 40px;
+}
