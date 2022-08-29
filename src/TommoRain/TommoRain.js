@@ -2,7 +2,7 @@ import React from 'react';
 import './TommoRain.css';
 import '../Common/Common.css';
 
-export default function TommoRain({ weatherData }) {
+export default function TommoRain({ weatherData, inputValue }) {
   return (
     <div class="tomo-forecast">
       {weatherData ? (

@@ -13,7 +13,7 @@ export default function WeatherPredictionCard({ dailyWeatherData }) {
           />
         </div>
         <div className="cardDate">
-          <p>{dailyWeatherData.dt}</p>
+          <p>{new Date(dailyWeatherData.dt * 1000).toDateString()}</p>
           <div className="cardTemp">
             <h3>{dailyWeatherData.weather[0].description}</h3>
             <h3 className="minMaxTemp">

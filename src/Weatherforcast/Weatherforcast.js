@@ -10,30 +10,23 @@ import ShowForecast from '../ShowForecast/ShowForecast';
 
 export default function Weatherforcast() {
   const [weatherData, setWeatherData] = useState();
-  const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState('Sydney');
   const APIKey = '6a4ce2c1a5f3b6720fde60a7c83736f5';
-  /*useEffect(() => {
-   
+
+  useEffect(() => {
     fetch(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKey}`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=${APIKey}`
     )
       .then((res) => res.json())
-      .then((dataToSet) => {
-        setWeatherData(dataToSet);
-        console.log(dataToSet);
-      });
-  }, []); */
+      .then((cityData) => getWeatherData(cityData[0].lat, cityData[0].lon));
+  }, []);
 
   const getLocation = () => {
     fetch(
       `https://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=${APIKey}`
     )
       .then((res) => res.json())
-      .then((cityData) => {
-        cityData.map((city) => {
-          getWeatherData(city.lat, city.lon);
-        });
-      });
+      .then((cityData) => getWeatherData(cityData[0].lat, cityData[0].lon));
   };
 
   const getWeatherData = (lat, lon) => {
@@ -58,7 +51,9 @@ export default function Weatherforcast() {
         </div>
         <div class="forecast">
           <WeeklyForecast weatherData={weatherData} />
-          <TommoRain weatherData={weatherData} />
+          <TommoRain weatherData={weatherData}
+                      inputValue={inputValue}
+          />
         </div>
       </div>
       <div class="container2">
