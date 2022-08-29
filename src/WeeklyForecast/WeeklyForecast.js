@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './WeeklyForecast.css';
 import '../Common/Common.css';
 
-export default function WeeklyForecast({ weatherData }) {
+export default function WeeklyForecast({ dailyWeatherData }) {
   const [currentTab, setCurrentTab] = useState('temperature');
 
   return (
@@ -43,7 +43,7 @@ export default function WeeklyForecast({ weatherData }) {
           />
         </div>
       </div>
-      {weatherData ? (
+      {dailyWeatherData ? (
         <div className="grid-2x4">
           <div className="white-circle">
             <img
@@ -77,57 +77,57 @@ export default function WeeklyForecast({ weatherData }) {
           {currentTab === 'temperature' ? (
             <React.Fragment>
               <div>
-                {weatherData.daily[0].temp.morn.toFixed()} <span>&#8451;</span>
+                {dailyWeatherData.temp.morn.toFixed()} <span>&#8451;</span>
                 <p>Morning</p>
               </div>
               <div>
-                {weatherData.daily[0].temp.day.toFixed()} <span>&#8451;</span>
+                {dailyWeatherData.temp.day.toFixed()} <span>&#8451;</span>
                 <p>Afternoon</p>
               </div>
               <div>
-                {weatherData.daily[0].temp.eve.toFixed()} <span>&#8451;</span>
+                {dailyWeatherData.temp.eve.toFixed()} <span>&#8451;</span>
                 <p>Evening</p>
               </div>
               <div>
-                {weatherData.daily[0].temp.night.toFixed()} <span>&#8451;</span>
+                {dailyWeatherData.temp.night.toFixed()} <span>&#8451;</span>
                 <p>Night</p>
               </div>
             </React.Fragment>
           ) : currentTab === 'rainfall' ? (
             <React.Fragment>
               <div>
-                {weatherData.daily[0].rain.toFixed()}
+                {dailyWeatherData.rain.toFixed()}
                 <p>Morning</p>
               </div>
               <div>
-                {weatherData.daily[0].rain.toFixed()}
+                {dailyWeatherData.rain.toFixed()}
                 <p>Afternoon</p>
               </div>
               <div>
-                {weatherData.daily[0].rain.toFixed()}
+                {dailyWeatherData.rain.toFixed()}
                 <p>Evening</p>
               </div>
               <div>
-                {weatherData.daily[0].rain.toFixed()}
+                {dailyWeatherData.rain.toFixed()}
                 <p>Night</p>
               </div>
             </React.Fragment>
           ) : currentTab === 'wind' ? (
             <React.Fragment>
               <div>
-                {weatherData.daily[0].wind_speed}
+                {dailyWeatherData.wind_speed}
                 <p>Morning</p>
               </div>
               <div>
-                {weatherData.daily[0].wind_speed}
+                {dailyWeatherData.wind_speed}
                 <p>Afternoon</p>
               </div>
               <div>
-                {weatherData.daily[0].wind_speed}
+                {dailyWeatherData.wind_speed}
                 <p>Evening</p>
               </div>
               <div>
-                {weatherData.daily[0].wind_speed}
+                {dailyWeatherData.wind_speed}
                 <p>Night</p>
               </div>
             </React.Fragment>
