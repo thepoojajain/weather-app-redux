@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Weatherforcast.css';
-import '../Common/Common.css';
+import '../../styles.css';
 import Weather from '../Weather/Weather';
 import Air from '../Air/Air';
 import Search from '../Search/Search';
@@ -51,7 +51,10 @@ export default function Weatherforcast() {
         </div>
         <div class="forecast">
           <WeeklyForecast dailyWeatherData={weatherData?.daily[0]} />
-          <TommoRain timezone={weatherData?.timezone} dailyWeatherData={weatherData?.daily[0]}  />
+          <TommoRain
+            timezone={weatherData?.timezone}
+            dailyWeatherData={weatherData?.daily[0]}
+          />
         </div>
       </div>
       <div class="container2">
