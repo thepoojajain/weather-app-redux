@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './Weatherforcast.css';
 import '../../styles.css';
 import Weather from '../Weather/Weather';
@@ -36,15 +36,15 @@ export default function Weatherforcast() {
   };
 
   return (
-    <div class="grid-1x2">
-      <div class="container1">
-        <div class="grid-1x4">
-          <h1 class="box-1">Hello,</h1>
+    <div className="grid-1x2">
+      <div className="container1">
+        <div className="grid-1x4">
+          <h1 className="box-1">Hello,</h1>
           <Search setInputValue={updateInputValue} getLocation={getLocation} />
           <Weather currentWeatherData={weatherData?.current} />
           <Air currentWeatherData={weatherData?.current} />
         </div>
-        <div class="forecast">
+        <div className="forecast">
           <WeeklyForecast dailyWeatherData={weatherData?.daily[0]} />
           <TommoRain
             timezone={weatherData?.timezone}
@@ -52,7 +52,7 @@ export default function Weatherforcast() {
           />
         </div>
       </div>
-      <div class="container2">
+      <div className="container2">
         <ShowForecast weatherData={weatherData} />
       </div>
     </div>
