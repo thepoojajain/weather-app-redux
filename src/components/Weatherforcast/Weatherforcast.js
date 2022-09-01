@@ -12,50 +12,35 @@ import {
   getLocationAsync,
   selectCityWeatherData,
   selectInputValue,
+  setInputValue,
 } from '../../store/reducers/weatherReducer';
 
 import { useSelector, useDispatch } from 'react-redux';
 
 export default function Weatherforcast() {
-  // const [weatherData, setWeatherData] = useState();
-  // const [inputValue, setInputValue] = useState('Sydney');
-  //const APIKey = '6a4ce2c1a5f3b6720fde60a7c83736f5';
-
   const weatherData = useSelector(selectCityWeatherData);
   const inputValue = useSelector(selectInputValue);
 
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getLocationAsync());
-    // getLocation();
+    getLocation();
   }, []);
 
-  /* const getLocation = () => {
-    fetch(
-      `https://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=${APIKey}`
-    )
-      .then((res) => res.json())
-      .then((cityData) => getWeatherData(cityData[0].lat, cityData[0].lon));
+  const getLocation = () => {
+    dispatch(getLocationAsync());
   };
 
-  const getWeatherData = (lat, lon) => {
-    fetch(
-      `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=hourly,minutely&appid=${APIKey}&units=metric`
-    )
-      .then((res) => res.json())
-      .then((cityWeatherData) => {
-        setWeatherData(cityWeatherData);
-        console.log(cityWeatherData);
-      });
-  }; */
+  const updateInputValue = (updatedInputValue) => {
+    dispatch(setInputValue(updatedInputValue));
+  };
 
   return (
     <div class="grid-1x2">
       <div class="container1">
         <div class="grid-1x4">
           <h1 class="box-1">Hello,</h1>
-          <Search setInputValue={setInputValue} getLocation={getLocation} />
+          <Search setInputValue={updateInputValue} getLocation={getLocation} />
           <Weather currentWeatherData={weatherData?.current} />
           <Air currentWeatherData={weatherData?.current} />
         </div>
