@@ -28,7 +28,7 @@ export default function Weatherforcast() {
   }, []);
 
   const getLocation = () => {
-    dispatch(getLocationAsync());
+    dispatch(getLocationAsync(inputValue));
   };
 
   const updateInputValue = (updatedInputValue) => {

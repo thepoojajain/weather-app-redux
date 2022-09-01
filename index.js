@@ -1,9 +1,9 @@
 import React from 'react';
-import { render } from 'react-dom';
-import Weatherforcast from './src/components/Weatherforcast/Weatherforcast';
+import { createRoot } from 'react-dom/client';
+import { Provider } from 'react-redux';
 
 import store from './src/store/store';
-import { Provider } from 'react-redux';
+import Weatherforcast from './src/components/Weatherforcast/Weatherforcast';
 
 function App() {
   return (
@@ -12,4 +12,7 @@ function App() {
     </Provider>
   );
 }
-render(<App />, document.getElementById('root'));
+
+const container = document.getElementById('root');
+const root = createRoot(container); // createRoot(container!) if you use TypeScript
+root.render(<App tab="home" />);

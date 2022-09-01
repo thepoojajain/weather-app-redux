@@ -10,7 +10,7 @@ export const weatherSlice = createSlice({
       lat: null,
       lon: null,
     },
-    cityWeatherData: {},
+    cityWeatherData: null,
     value: 0,
   },
   reducers: {
@@ -50,14 +50,8 @@ export const getWeatherDataAsync = (lat, lon) => (dispatch) => {
     .then((cityWeatherData) => dispatch(setCityWeatherData(cityWeatherData)));
 };
 
-export const selectCityWeatherData = (state) => {
-  console.log('**** State: ', state.weather.cityWeatherData);
-  return state.weather.cityWeatherData;
-};
+export const selectCityWeatherData = (state) => state.weather.cityWeatherData;
 
-export const selectInputValue = (state) => {
-  console.log('**** State: ', state);
-  return state.weather.inputValue;
-};
+export const selectInputValue = (state) => state.weather.inputValue;
 
 export default weatherSlice.reducer;
