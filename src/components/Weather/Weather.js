@@ -1,6 +1,6 @@
 import React from 'react';
 import './Weather.css';
-import '../Common/Common.css';
+import '../../styles.css';
 
 export default function Weather({ currentWeatherData }) {
   return (

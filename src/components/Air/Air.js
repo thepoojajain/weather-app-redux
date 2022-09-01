@@ -1,6 +1,6 @@
 import React from 'react';
 import './Air.css';
-import '../Common/Common.css';
+import '../../styles.css';
 
 export default function Air({ currentWeatherData }) {
   return (

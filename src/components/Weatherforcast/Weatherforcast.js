@@ -8,20 +8,30 @@ import WeeklyForecast from '../WeeklyForecast/WeeklyForecast';
 import TommoRain from '../TommoRain/TommoRain';
 import ShowForecast from '../ShowForecast/ShowForecast';
 
+import {
+  getLocationAsync,
+  selectCityWeatherData,
+  selectInputValue,
+} from '../../store/reducers/weatherReducer';
+
+import { useSelector, useDispatch } from 'react-redux';
+
 export default function Weatherforcast() {
-  const [weatherData, setWeatherData] = useState();
-  const [inputValue, setInputValue] = useState('Sydney');
-  const APIKey = '6a4ce2c1a5f3b6720fde60a7c83736f5';
+  // const [weatherData, setWeatherData] = useState();
+  // const [inputValue, setInputValue] = useState('Sydney');
+  //const APIKey = '6a4ce2c1a5f3b6720fde60a7c83736f5';
+
+  const weatherData = useSelector(selectCityWeatherData);
+  const inputValue = useSelector(selectInputValue);
+
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch(
-      `https://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=${APIKey}`
-    )
-      .then((res) => res.json())
-      .then((cityData) => getWeatherData(cityData[0].lat, cityData[0].lon));
+    dispatch(getLocationAsync());
+    // getLocation();
   }, []);
 
-  const getLocation = () => {
+  /* const getLocation = () => {
     fetch(
       `https://api.openweathermap.org/geo/1.0/direct?q=${inputValue}&limit=1&appid=${APIKey}`
     )
@@ -38,7 +48,7 @@ export default function Weatherforcast() {
         setWeatherData(cityWeatherData);
         console.log(cityWeatherData);
       });
-  };
+  }; */
 
   return (
     <div class="grid-1x2">

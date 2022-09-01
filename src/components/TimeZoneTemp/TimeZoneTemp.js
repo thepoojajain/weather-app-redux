@@ -1,6 +1,6 @@
 import React from 'react';
 import './TimeZoneTemp.css';
-import '../Common/Common.css';
+import '../../styles.css';
 
 export default function TimeZoneTemp({ weatherData }) {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './WeeklyForecast.css';
-import '../Common/Common.css';
+import '../../styles.css';
 
 export default function WeeklyForecast({ dailyWeatherData }) {
   const [currentTab, setCurrentTab] = useState('temperature');

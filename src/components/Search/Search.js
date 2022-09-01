@@ -1,6 +1,6 @@
 import React from 'react';
 import './Search.css';
-import '../Common/Common.css';
+import '../../styles.css';
 
 export default function Search({ setInputValue, getLocation }) {
   return (

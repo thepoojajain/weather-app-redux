@@ -1,6 +1,6 @@
 import React from 'react';
 import './TommoRain.css';
-import '../Common/Common.css';
+import '../../styles.css';
 
 export default function TommoRain({ timezone, dailyWeatherData }) {
   return (
