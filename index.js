@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 
 import store from './src/store/store';
-import Weatherforcast from './src/components/Weatherforcast/Weatherforcast';
+import WeatherForecast from './src/components/WeatherForecast/WeatherForecast';
 
 function App() {
   return (
     <Provider store={store}>
-      <Weatherforcast />
+      <WeatherForecast />
     </Provider>
   );
 }

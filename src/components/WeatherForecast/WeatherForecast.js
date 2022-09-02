@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Weatherforcast.css';
+import './WeatherForecast.css';
 import '../../styles.css';
 import Weather from '../Weather/Weather';
 import Air from '../Air/Air';
@@ -17,7 +17,7 @@ import {
 
 import { useSelector, useDispatch } from 'react-redux';
 
-export default function Weatherforcast() {
+export default function WeatherForecast() {
   const weatherData = useSelector(selectCityWeatherData);
   const inputValue = useSelector(selectInputValue);
 
