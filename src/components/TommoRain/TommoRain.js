@@ -4,9 +4,9 @@ import '../../styles.css';
 
 export default function TommoRain({ timezone, dailyWeatherData }) {
   return (
-    <div class="tomo-forecast">
+    <div className="tomo-forecast">
       {dailyWeatherData ? (
-        <div class="rain-forecast">
+        <div className="rain-forecast">
           <div>
             <h4>tomorrow</h4>
             <h1>{timezone.split('/')[1]}</h1>

@@ -4,15 +4,15 @@ import '../../styles.css';
 
 export default function Search({ setInputValue, getLocation }) {
   return (
-    <div class="searchBar box-2">
+    <div className="searchBar box-2">
       <input
-        class="searchInput"
+        className="searchInput"
         placeholder="Enter location"
         type="text"
         onChange={(e) => setInputValue(e.target.value)}
-        autocomplete
+        autoComplete="true"
       />
-      <button class="searchBtn" onClick={() => getLocation()}>
+      <button className="searchBtn" onClick={() => getLocation()}>
         Search
       </button>
     </div>

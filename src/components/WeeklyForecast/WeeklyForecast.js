@@ -18,7 +18,7 @@ export default function WeeklyForecast({ dailyWeatherData }) {
             alt="umbrella icon"
             className="forecast--icon"
             style={{
-              'background-color': currentTab === 'temperature' ? 'orange' : '',
+              backgroundColor: currentTab === 'temperature' ? 'orange' : '',
             }}
             onClick={() => setCurrentTab('temperature')}
           />
@@ -28,7 +28,7 @@ export default function WeeklyForecast({ dailyWeatherData }) {
             alt="umbrella icon"
             className="forecast--icon"
             style={{
-              'background-color': currentTab === 'rainfall' ? 'orange' : '',
+              backgroundColor: currentTab === 'rainfall' ? 'orange' : '',
             }}
             onClick={() => setCurrentTab('rainfall')}
           />
@@ -37,7 +37,7 @@ export default function WeeklyForecast({ dailyWeatherData }) {
             alt="umbrella icon"
             className="forecast--icon"
             style={{
-              'background-color': currentTab === 'wind' ? 'orange' : '',
+              backgroundColor: currentTab === 'wind' ? 'orange' : '',
             }}
             onClick={() => setCurrentTab('wind')}
           />

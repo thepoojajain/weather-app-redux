@@ -7,8 +7,8 @@ export default function WeatherPrediction({ weatherData }) {
     <div className="WeatherPrediction">
       <h2 className="WeatherPredictionHeader">Weather Prediction</h2>
       {weatherData.daily.map((item) => (
-        <WeatherPredictionCard dailyWeatherData={item} />
+        <WeatherPredictionCard key={item.dt} dailyWeatherData={item} />
       ))}
-    </div>
+    </div> 
   );
 }
