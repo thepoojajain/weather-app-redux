@@ -10,10 +10,13 @@ export default function ShowForecast({ weatherData }) {
     <div className="showForecast">
       {weatherData ? (
         <React.Fragment>
-          <TimeZoneTemp weatherData={weatherData} />
+          <TimeZoneTemp
+            timezone={weatherData.timezone}
+            currentWeatherData={weatherData.current}
+          />
           <SunsetSunriseChart weatherData={weatherData} />
-          <UVRays weatherData={weatherData} />
-          <WeatherPrediction weatherData={weatherData} />
+          <UVRays UVI={weatherData.current.uvi} />
+          <WeatherPrediction dailyWeatherData={weatherData.daily} />
         </React.Fragment>
       ) : null}
     </div>

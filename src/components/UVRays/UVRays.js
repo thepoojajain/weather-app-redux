@@ -1,7 +1,7 @@
 import React from 'react';
 import './UVRays.css';
 
-export default function UVRays({ weatherData }) {
+export default function UVRays({ UVI }) {
   return (
     <div className="card">
       <div>
@@ -12,7 +12,7 @@ export default function UVRays({ weatherData }) {
         />
       </div>
       <div>
-        <h3>{weatherData.current.uvi} UVI</h3>
+        <h3>{UVI} UVI</h3>
       </div>
     </div>
   );
