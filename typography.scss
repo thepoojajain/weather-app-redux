@@ -1,0 +1,215 @@
+
+/* This is heading 3 font size */
+.typographyPlayText3Xl400 
+{ 
+  
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+/* This is heading 5 font size */
+.typographyPlayTextXl400 
+{ 
+  
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+/* This is font size for intros */
+.typographyUbuntuTextLg700 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+.typographyUbuntuTextBase700 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+.typographyUbuntuTextSm700 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+.typographyUbuntuTextlinkLg500 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+.typographyUbuntuTextlinkBase500 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+.typographyUbuntuTextlinkSm500 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+/* This is heading 3 font size */
+@mixin typographyPlayText3Xl400 
+{ 
+  
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+/* This is heading 5 font size */
+@mixin typographyPlayTextXl400 
+{ 
+  
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+/* This is font size for intros */
+@mixin typographyUbuntuTextLg700 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+@mixin typographyUbuntuTextBase700 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+@mixin typographyUbuntuTextSm700 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+@mixin typographyUbuntuTextlinkLg500 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+@mixin typographyUbuntuTextlinkBase500 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
+@mixin typographyUbuntuTextlinkSm500 
+{ 
+  
+  font-family: "Ubuntu Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  
+  text-indent: 0px; 
+}    
+
